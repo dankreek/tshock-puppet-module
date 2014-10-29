@@ -37,5 +37,6 @@
 #
 class terraria {
 
+  notify { 'I am Terraria': }
 
 }
