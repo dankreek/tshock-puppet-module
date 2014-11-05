@@ -1,0 +1,11 @@
+#!/bin/sh
+
+mono TerrariaServer.exe \
+	-ip <%= @ip %> \
+	-port <%= @port %> \
+	-maxplayers <%= @maxplayers %> \
+	-world "<%= @world_path %>/<%= @world %>" \
+	-worldpath "<%= @world_path %>" \
+	-autocreate <%= @world_size %> \
+	-lang <%= @language %> \
+	-connperip <%= @conn_per_ip %> 

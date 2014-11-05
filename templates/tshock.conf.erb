@@ -1,0 +1,22 @@
+# This file is managed by Puppet.
+#
+# tshock - Terraria World Server
+# 
+# Starts TShock which is a Terraria world server.
+
+description "TShock Server"
+
+start on ( local-filesystems and stopped rc )
+stop on runlevel [!2345]
+
+respawn
+chdir <%= @install_loc %>
+
+# Don't want to actually kill scree, so sending in innocuous signal
+kill signal SIGCONT
+
+# Allow tshock 25 seconds to safely shutdown before SIGKILL'ing it
+kill timeout 25
+
+exec screen -DmS tshock -- su <%= @user %> -c ./start.sh
+pre-stop exec screen -S tshock -X stuff "\nexit\n"

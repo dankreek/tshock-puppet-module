@@ -1,14 +1,14 @@
 {
-  "name": "dankreek-terraria",
+  "name": "dankreek-tshock",
   "version": "0.0.1",
   "author": "dankreek",
-  "summary": "Terraria Server",
+  "summary": "A TShock Terraria Server module",
   "license": "Apache 2.0",
-  "source": "https://github.com/dankreek/terraria-puppet-module",
-  "project_page": "https://github.com/dankreek/terraria-puppet-module",
-  "issues_url": "https://github.com/dankreek/terraria-puppet-module/issues",
+  "source": "https://github.com/dankreek/tshock-puppet-module",
+  "project_page": "https://github.com/dankreek/tshock-puppet-module",
+  "issues_url": "https://github.com/dankreek/tshock-puppet-module/issues",
   "dependencies": [
-    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+    {"name":"maestrodev-wget","version_requirement":">= 1.5.6"}
   ]
 }
 
