@@ -1,6 +1,7 @@
 # == Class: terraria
 #
-# Full description of class terraria here.
+# Gets the TShock installation zip file from Github and installs it on
+# the system. 
 #
 # === Parameters
 #
